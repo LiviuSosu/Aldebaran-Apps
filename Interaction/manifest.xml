@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="interaction-7ebc6a" version="0.0.0">
+ <names>
+  <name lang="en_US">Interaction</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="handshake">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="GrabObject">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>
