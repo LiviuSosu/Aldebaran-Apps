@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ChoregrapheProject xmlns="http://www.aldebaran-robotics.com/schema/choregraphe/project.xsd" xar_version="3">
+    <Box name="root" id="-1" localization="8" tooltip="Root box of Choregraphe&apos;s behavior. Highest level possible." x="0" y="0">
+        <bitmap>media/images/box/root.png</bitmap>
+        <script language="4">
+            <content>
+                <![CDATA[]]>
+</content>
+        </script>
+        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+        <Timeline enable="0">
+            <BehaviorLayer name="behavior_layer1">
+                <BehaviorKeyframe name="keyframe1" index="1">
+                    <Diagram>
+                        <Box name="Diagram" id="1" localization="8" tooltip="This box is empty and should be used to create any box diagram you would like.&#x0A;&#x0A;To edit its diagram, double-click on it." x="330" y="117">
+                            <bitmap>media/images/box/box-diagram.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                            <Timeline enable="0">
+                                <BehaviorLayer name="behavior_layer1">
+                                    <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                            <Box name="Timeline" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="247" y="59">
+                                                <bitmap>media/images/box/movement/move.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                                <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="795">
+                                                    <BehaviorLayer name="behavior_layer1">
+                                                        <BehaviorKeyframe name="keyframe1" index="1">
+                                                            <Diagram />
+                                                        </BehaviorKeyframe>
+                                                    </BehaviorLayer>
+                                                    <ActuatorList model="">
+                                                        <ActuatorCurve name="value" actuator="HeadPitch" mute="0" unit="0">
+                                                            <Key frame="20" value="-8.26171" />
+                                                            <Key frame="30" value="-8.4375" />
+                                                            <Key frame="40" value="-8.26171" />
+                                                            <Key frame="50" value="-8.4375" />
+                                                            <Key frame="60" value="-8.26171" />
+                                                            <Key frame="70" value="-8.4375" />
+                                                            <Key frame="80" value="-8.26171" />
+                                                            <Key frame="90" value="-8.4375" />
+                                                            <Key frame="100" value="-8.26171" />
+                                                            <Key frame="110" value="-8.4375" />
+                                                            <Key frame="120" value="-8.26171" />
+                                                            <Key frame="130" value="-8.4375" />
+                                                            <Key frame="150" value="-23.9941" />
+                                                            <Key frame="165" value="-22.2363" />
+                                                            <Key frame="180" value="-23.9941" />
+                                                            <Key frame="195" value="-22.2363" />
+                                                            <Key frame="210" value="-23.9941" />
+                                                            <Key frame="225" value="-22.2363" />
+                                                            <Key frame="240" value="-23.9941" />
+                                                            <Key frame="255" value="-22.2363" />
+                                                            <Key frame="270" value="-23.9941" />
+                                                            <Key frame="285" value="-22.2363" />
+                                                            <Key frame="310" value="-14.9414" />
+                                                            <Key frame="315" value="-14.9414" />
+                                                            <Key frame="320" value="-14.9414" />
+                                                            <Key frame="325" value="-14.9414" />
+                                                            <Key frame="330" value="-14.9414" />
+                                                            <Key frame="335" value="-14.9414" />
+                                                            <Key frame="340" value="-14.9414" />
+                                                            <Key frame="345" value="-14.9414" />
+                                                            <Key frame="350" value="-14.9414" />
+                                                            <Key frame="355" value="-14.9414" />
+                                                            <Key frame="360" value="-14.9414" />
+                                                            <Key frame="365" value="-14.9414" />
+                                                            <Key frame="370" value="-14.9414" />
+                                                            <Key frame="375" value="-14.9414" />
+                                                            <Key frame="380" value="-14.9414" />
+                                                            <Key frame="385" value="-14.9414" />
+                                                            <Key frame="390" value="-14.9414" />
+                                                            <Key frame="395" value="-14.9414" />
+                                                            <Key frame="400" value="-14.9414" />
+                                                            <Key frame="405" value="-14.9414" />
+                                                            <Key frame="410" value="-14.9414" />
+                                                            <Key frame="415" value="-14.9414" />
+                                                            <Key frame="420" value="-14.9414" />
+                                                            <Key frame="425" value="-14.9414" />
+                                                            <Key frame="480" value="-22.5" />
+                                                            <Key frame="495" value="-23.1152" />
+                                                            <Key frame="511" value="-22.5" />
+                                                            <Key frame="527" value="-23.1152" />
+                                                            <Key frame="543" value="-22.5" />
+                                                            <Key frame="559" value="-23.1152" />
+                                                            <Key frame="575" value="-22.5" />
+                                                            <Key frame="590" value="-23.1152" />
+                                                            <Key frame="606" value="-22.5" />
+                                                            <Key frame="620" value="-23.1152" />
+                                                            <Key frame="636" value="-22.5" />
+                                                            <Key frame="665" value="-40.5" />
+                                                            <Key frame="680" value="-40.5" />
+                                                            <Key frame="695" value="-40.5" />
+                                                            <Key frame="710" value="-40.5" />
+                                                            <Key frame="725" value="-40.5" />
+                                                            <Key frame="740" value="-40.5" />
+                                                            <Key frame="755" value="-40.5" />
+                                                            <Key frame="770" value="-40.5" />
+                                                            <Key frame="785" value="-40.5" />
+                                                            <Key frame="795" value="-40.5" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="HeadYaw" mute="0" unit="0">
+                                                            <Key frame="20" value="9.14062" />
+                                                            <Key frame="30" value="9.22851" />
+                                                            <Key frame="40" value="9.14062" />
+                                                            <Key frame="50" value="9.22851" />
+                                                            <Key frame="60" value="9.14062" />
+                                                            <Key frame="70" value="9.22851" />
+                                                            <Key frame="80" value="9.14062" />
+                                                            <Key frame="90" value="9.22851" />
+                                                            <Key frame="100" value="9.14062" />
+                                                            <Key frame="110" value="9.22851" />
+                                                            <Key frame="120" value="9.14062" />
+                                                            <Key frame="130" value="9.22851" />
+                                                            <Key frame="150" value="70.6641" />
+                                                            <Key frame="165" value="64.1602" />
+                                                            <Key frame="180" value="70.6641" />
+                                                            <Key frame="195" value="64.1602" />
+                                                            <Key frame="210" value="70.6641" />
+                                                            <Key frame="225" value="64.1602" />
+                                                            <Key frame="240" value="70.6641" />
+                                                            <Key frame="255" value="64.1602" />
+                                                            <Key frame="270" value="70.6641" />
+                                                            <Key frame="285" value="64.1602" />
+                                                            <Key frame="310" value="-2.02149" />
+                                                            <Key frame="315" value="-2.02149" />
+                                                            <Key frame="320" value="-2.02149" />
+                                                            <Key frame="325" value="-2.02149" />
+                                                            <Key frame="330" value="-2.02149" />
+                                                            <Key frame="335" value="-2.02149" />
+                                                            <Key frame="340" value="-2.02149" />
+                                                            <Key frame="345" value="-2.02149" />
+                                                            <Key frame="350" value="-2.02149" />
+                                                            <Key frame="355" value="-2.02149" />
+                                                            <Key frame="360" value="-2.02149" />
+                                                            <Key frame="365" value="-2.02149" />
+                                                            <Key frame="370" value="-2.02149" />
+                                                            <Key frame="375" value="-2.02149" />
+                                                            <Key frame="380" value="-2.02149" />
+                                                            <Key frame="385" value="-2.02149" />
+                                                            <Key frame="390" value="-2.02149" />
+                                                            <Key frame="395" value="-2.02149" />
+                                                            <Key frame="400" value="-2.02149" />
+                                                            <Key frame="405" value="-2.02149" />
+                                                            <Key frame="410" value="-2.02149" />
+                                                            <Key frame="415" value="-2.02149" />
+                                                            <Key frame="420" value="-2.02149" />
+                                                            <Key frame="425" value="-2.02149" />
+                                                            <Key frame="480" value="1.05469" />
+                                                            <Key frame="495" value="1.05469" />
+                                                            <Key frame="511" value="1.05469" />
+                                                            <Key frame="527" value="1.05469" />
+                                                            <Key frame="543" value="1.05469" />
+                                                            <Key frame="559" value="1.05469" />
+                                                            <Key frame="575" value="1.05469" />
+                                                            <Key frame="590" value="1.05469" />
+                                                            <Key frame="606" value="1.05469" />
+                                                            <Key frame="620" value="1.05469" />
+                                                            <Key frame="636" value="1.05469" />
+                                                            <Key frame="665" value="3.95508" />
+                                                            <Key frame="680" value="3.95508" />
+                                                            <Key frame="695" value="4.04297" />
+                                                            <Key frame="710" value="3.95508" />
+                                                            <Key frame="725" value="3.95508" />
+                                                            <Key frame="740" value="4.04297" />
+                                                            <Key frame="755" value="3.95508" />
+                                                            <Key frame="770" value="3.95508" />
+                                                            <Key frame="785" value="4.04297" />
+                                                            <Key frame="795" value="4.04297" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="" actuator="HipPitch" mute="0" unit="0">
+                                                            <Key frame="20" value="5.00977" />
+                                                            <Key frame="30" value="-2.19727" />
+                                                            <Key frame="40" value="5.00977" />
+                                                            <Key frame="50" value="-2.19727" />
+                                                            <Key frame="60" value="5.00977" />
+                                                            <Key frame="70" value="-2.19727" />
+                                                            <Key frame="80" value="5.00977" />
+                                                            <Key frame="90" value="-2.19727" />
+                                                            <Key frame="100" value="5.00977" />
+                                                            <Key frame="110" value="-2.19727" />
+                                                            <Key frame="120" value="5.00977" />
+                                                            <Key frame="130" value="-2.19727" />
+                                                            <Key frame="150" value="-2.10938" />
+                                                            <Key frame="165" value="-2.10938" />
+                                                            <Key frame="180" value="-2.10938" />
+                                                            <Key frame="195" value="-2.10938" />
+                                                            <Key frame="210" value="-2.10938" />
+                                                            <Key frame="225" value="-2.10938" />
+                                                            <Key frame="240" value="-2.10938" />
+                                                            <Key frame="255" value="-2.10938" />
+                                                            <Key frame="270" value="-2.10938" />
+                                                            <Key frame="285" value="-2.10938" />
+                                                            <Key frame="310" value="-1.75782" />
+                                                            <Key frame="315" value="-1.75782" />
+                                                            <Key frame="320" value="-1.75782" />
+                                                            <Key frame="325" value="-1.75782" />
+                                                            <Key frame="330" value="-1.75782" />
+                                                            <Key frame="335" value="-1.75782" />
+                                                            <Key frame="340" value="-1.75782" />
+                                                            <Key frame="345" value="-1.75782" />
+                                                            <Key frame="350" value="-1.75782" />
+                                                            <Key frame="355" value="-1.75782" />
+                                                            <Key frame="360" value="-1.75782" />
+                                                            <Key frame="365" value="-1.75782" />
+                                                            <Key frame="370" value="-1.75782" />
+                                                            <Key frame="375" value="-1.75782" />
+                                                            <Key frame="380" value="-1.75782" />
+                                                            <Key frame="385" value="-1.75782" />
+                                                            <Key frame="390" value="-1.75782" />
+                                                            <Key frame="395" value="-1.75782" />
+                                                            <Key frame="400" value="-1.75782" />
+                                                            <Key frame="405" value="-1.75782" />
+                                                            <Key frame="410" value="-1.75782" />
+                                                            <Key frame="415" value="-1.75782" />
+                                                            <Key frame="420" value="-1.75782" />
+                                                            <Key frame="425" value="-1.75782" />
+                                                            <Key frame="480" value="4.74609" />
+                                                            <Key frame="495" value="14.2383" />
+                                                            <Key frame="511" value="4.74609" />
+                                                            <Key frame="527" value="14.2383" />
+                                                            <Key frame="543" value="4.74609" />
+                                                            <Key frame="559" value="14.2383" />
+                                                            <Key frame="575" value="4.74609" />
+                                                            <Key frame="590" value="14.2383" />
+                                                            <Key frame="606" value="4.74609" />
+                                                            <Key frame="620" value="14.2383" />
+                                                            <Key frame="636" value="4.74609" />
+                                                            <Key frame="665" value="-1.75782" />
+                                                            <Key frame="680" value="-1.58204" />
+                                                            <Key frame="695" value="-1.58204" />
+                                                            <Key frame="710" value="-1.75782" />
+                                                            <Key frame="725" value="-1.58204" />
+                                                            <Key frame="740" value="-1.58204" />
+                                                            <Key frame="755" value="-1.75782" />
+                                                            <Key frame="770" value="-1.58204" />
+                                                            <Key frame="785" value="-1.58204" />
+                                                            <Key frame="795" value="-1.84571" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="HipRoll" mute="0" unit="0">
+                                                            <Key frame="20" value="-0.175782" />
+                                                            <Key frame="30" value="-0.263673" />
+                                                            <Key frame="40" value="-0.175782" />
+                                                            <Key frame="50" value="-0.263673" />
+                                                            <Key frame="60" value="-0.175782" />
+                                                            <Key frame="70" value="-0.263673" />
+                                                            <Key frame="80" value="-0.175782" />
+                                                            <Key frame="90" value="-0.263673" />
+                                                            <Key frame="100" value="-0.175782" />
+                                                            <Key frame="110" value="-0.263673" />
+                                                            <Key frame="120" value="-0.175782" />
+                                                            <Key frame="130" value="-0.263673" />
+                                                            <Key frame="150" value="-9.22851" />
+                                                            <Key frame="165" value="2.98828" />
+                                                            <Key frame="180" value="-9.22851" />
+                                                            <Key frame="195" value="2.98828" />
+                                                            <Key frame="210" value="-9.22851" />
+                                                            <Key frame="225" value="2.98828" />
+                                                            <Key frame="240" value="-9.22851" />
+                                                            <Key frame="255" value="2.98828" />
+                                                            <Key frame="270" value="-9.22851" />
+                                                            <Key frame="285" value="2.98828" />
+                                                            <Key frame="310" value="-0.0878909" />
+                                                            <Key frame="315" value="-0.703127" />
+                                                            <Key frame="320" value="-0.351564" />
+                                                            <Key frame="325" value="-0.0878909" />
+                                                            <Key frame="330" value="-0.703127" />
+                                                            <Key frame="335" value="-0.351564" />
+                                                            <Key frame="340" value="-0.0878909" />
+                                                            <Key frame="345" value="-0.703127" />
+                                                            <Key frame="350" value="-0.351564" />
+                                                            <Key frame="355" value="-0.0878909" />
+                                                            <Key frame="360" value="-0.703127" />
+                                                            <Key frame="365" value="-0.351564" />
+                                                            <Key frame="370" value="-0.0878909" />
+                                                            <Key frame="375" value="-0.703127" />
+                                                            <Key frame="380" value="-0.351564" />
+                                                            <Key frame="385" value="-0.0878909" />
+                                                            <Key frame="390" value="-0.703127" />
+                                                            <Key frame="395" value="-0.351564" />
+                                                            <Key frame="400" value="-0.0878909" />
+                                                            <Key frame="405" value="-0.703127" />
+                                                            <Key frame="410" value="-0.351564" />
+                                                            <Key frame="415" value="-0.0878909" />
+                                                            <Key frame="420" value="-0.703127" />
+                                                            <Key frame="425" value="-0.351564" />
+                                                            <Key frame="480" value="-0.351564" />
+                                                            <Key frame="495" value="-0.351564" />
+                                                            <Key frame="511" value="-0.351564" />
+                                                            <Key frame="527" value="-0.351564" />
+                                                            <Key frame="543" value="-0.351564" />
+                                                            <Key frame="559" value="-0.351564" />
+                                                            <Key frame="575" value="-0.351564" />
+                                                            <Key frame="590" value="-0.351564" />
+                                                            <Key frame="606" value="-0.351564" />
+                                                            <Key frame="620" value="-0.351564" />
+                                                            <Key frame="636" value="-0.351564" />
+                                                            <Key frame="665" value="-0.263673" />
+                                                            <Key frame="680" value="-0.263673" />
+                                                            <Key frame="695" value="-0.703127" />
+                                                            <Key frame="710" value="-0.263673" />
+                                                            <Key frame="725" value="-0.263673" />
+                                                            <Key frame="740" value="-0.703127" />
+                                                            <Key frame="755" value="-0.263673" />
+                                                            <Key frame="770" value="-0.263673" />
+                                                            <Key frame="785" value="-0.703127" />
+                                                            <Key frame="795" value="-0.351564" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="KneePitch" mute="0" unit="0">
+                                                            <Key frame="20" value="-2.19727" />
+                                                            <Key frame="30" value="-1.66993" />
+                                                            <Key frame="40" value="-2.19727" />
+                                                            <Key frame="50" value="-1.66993" />
+                                                            <Key frame="60" value="-2.19727" />
+                                                            <Key frame="70" value="-1.66993" />
+                                                            <Key frame="80" value="-2.19727" />
+                                                            <Key frame="90" value="-1.66993" />
+                                                            <Key frame="100" value="-2.19727" />
+                                                            <Key frame="110" value="-1.66993" />
+                                                            <Key frame="120" value="-2.19727" />
+                                                            <Key frame="130" value="-1.66993" />
+                                                            <Key frame="150" value="3.51562" />
+                                                            <Key frame="165" value="3.25195" />
+                                                            <Key frame="180" value="3.51562" />
+                                                            <Key frame="195" value="3.25195" />
+                                                            <Key frame="210" value="3.51562" />
+                                                            <Key frame="225" value="3.25195" />
+                                                            <Key frame="240" value="3.51562" />
+                                                            <Key frame="255" value="3.25195" />
+                                                            <Key frame="270" value="3.51562" />
+                                                            <Key frame="285" value="3.25195" />
+                                                            <Key frame="310" value="0" />
+                                                            <Key frame="315" value="0" />
+                                                            <Key frame="320" value="0" />
+                                                            <Key frame="325" value="0" />
+                                                            <Key frame="330" value="0" />
+                                                            <Key frame="335" value="0" />
+                                                            <Key frame="340" value="0" />
+                                                            <Key frame="345" value="0" />
+                                                            <Key frame="350" value="0" />
+                                                            <Key frame="355" value="0" />
+                                                            <Key frame="360" value="0" />
+                                                            <Key frame="365" value="0" />
+                                                            <Key frame="370" value="0" />
+                                                            <Key frame="375" value="0" />
+                                                            <Key frame="380" value="0" />
+                                                            <Key frame="385" value="0" />
+                                                            <Key frame="390" value="0" />
+                                                            <Key frame="395" value="0" />
+                                                            <Key frame="400" value="0" />
+                                                            <Key frame="405" value="0" />
+                                                            <Key frame="410" value="0" />
+                                                            <Key frame="415" value="0" />
+                                                            <Key frame="420" value="0" />
+                                                            <Key frame="425" value="0" />
+                                                            <Key frame="480" value="-5.09766" />
+                                                            <Key frame="495" value="-6.15235" />
+                                                            <Key frame="511" value="-5.09766" />
+                                                            <Key frame="527" value="-6.15235" />
+                                                            <Key frame="543" value="-5.09766" />
+                                                            <Key frame="559" value="-6.15235" />
+                                                            <Key frame="575" value="-5.09766" />
+                                                            <Key frame="590" value="-6.15235" />
+                                                            <Key frame="606" value="-5.09766" />
+                                                            <Key frame="620" value="-6.15235" />
+                                                            <Key frame="636" value="-5.09766" />
+                                                            <Key frame="665" value="-0.263673" />
+                                                            <Key frame="680" value="0.615236" />
+                                                            <Key frame="695" value="0.615236" />
+                                                            <Key frame="710" value="-0.263673" />
+                                                            <Key frame="725" value="0.615236" />
+                                                            <Key frame="740" value="0.615236" />
+                                                            <Key frame="755" value="-0.263673" />
+                                                            <Key frame="770" value="0.615236" />
+                                                            <Key frame="785" value="0.615236" />
+                                                            <Key frame="795" value="0" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="LElbowRoll" mute="0" unit="0">
+                                                            <Key frame="20" value="-0.878909" />
+                                                            <Key frame="30" value="-1.40625" />
+                                                            <Key frame="40" value="-0.878909" />
+                                                            <Key frame="50" value="-1.40625" />
+                                                            <Key frame="60" value="-0.878909" />
+                                                            <Key frame="70" value="-1.40625" />
+                                                            <Key frame="80" value="-0.878909" />
+                                                            <Key frame="90" value="-1.40625" />
+                                                            <Key frame="100" value="-0.878909" />
+                                                            <Key frame="110" value="-1.40625" />
+                                                            <Key frame="120" value="-0.878909" />
+                                                            <Key frame="130" value="-1.40625" />
+                                                            <Key frame="150" value="-56.9531" />
+                                                            <Key frame="165" value="-51.2402" />
+                                                            <Key frame="180" value="-56.9531" />
+                                                            <Key frame="195" value="-51.2402" />
+                                                            <Key frame="210" value="-56.9531" />
+                                                            <Key frame="225" value="-51.2402" />
+                                                            <Key frame="240" value="-56.9531" />
+                                                            <Key frame="255" value="-51.2402" />
+                                                            <Key frame="270" value="-56.9531" />
+                                                            <Key frame="285" value="-51.2402" />
+                                                            <Key frame="310" value="-68.5547" />
+                                                            <Key frame="315" value="-83.1445" />
+                                                            <Key frame="320" value="-59.6777" />
+                                                            <Key frame="325" value="-68.5547" />
+                                                            <Key frame="330" value="-83.1445" />
+                                                            <Key frame="335" value="-59.6777" />
+                                                            <Key frame="340" value="-68.5547" />
+                                                            <Key frame="345" value="-83.1445" />
+                                                            <Key frame="350" value="-59.6777" />
+                                                            <Key frame="355" value="-68.5547" />
+                                                            <Key frame="360" value="-83.1445" />
+                                                            <Key frame="365" value="-59.6777" />
+                                                            <Key frame="370" value="-68.5547" />
+                                                            <Key frame="375" value="-83.1445" />
+                                                            <Key frame="380" value="-59.6777" />
+                                                            <Key frame="385" value="-68.5547" />
+                                                            <Key frame="390" value="-83.1445" />
+                                                            <Key frame="395" value="-59.6777" />
+                                                            <Key frame="400" value="-68.5547" />
+                                                            <Key frame="405" value="-83.1445" />
+                                                            <Key frame="410" value="-59.6777" />
+                                                            <Key frame="415" value="-68.5547" />
+                                                            <Key frame="420" value="-83.1445" />
+                                                            <Key frame="425" value="-59.6777" />
+                                                            <Key frame="480" value="-59.502" />
+                                                            <Key frame="495" value="-60.1172" />
+                                                            <Key frame="511" value="-59.502" />
+                                                            <Key frame="527" value="-60.1172" />
+                                                            <Key frame="543" value="-59.502" />
+                                                            <Key frame="559" value="-60.1172" />
+                                                            <Key frame="575" value="-59.502" />
+                                                            <Key frame="590" value="-60.1172" />
+                                                            <Key frame="606" value="-59.502" />
+                                                            <Key frame="620" value="-60.1172" />
+                                                            <Key frame="636" value="-59.502" />
+                                                            <Key frame="665" value="-12.7441" />
+                                                            <Key frame="680" value="-10.6348" />
+                                                            <Key frame="695" value="-2.19727" />
+                                                            <Key frame="710" value="-12.7441" />
+                                                            <Key frame="725" value="-10.6348" />
+                                                            <Key frame="740" value="-2.19727" />
+                                                            <Key frame="755" value="-12.7441" />
+                                                            <Key frame="770" value="-10.6348" />
+                                                            <Key frame="785" value="-2.19727" />
+                                                            <Key frame="795" value="-0.615236" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="LElbowYaw" mute="0" unit="0">
+                                                            <Key frame="20" value="-68.5547" />
+                                                            <Key frame="30" value="-68.7305" />
+                                                            <Key frame="40" value="-68.5547" />
+                                                            <Key frame="50" value="-68.7305" />
+                                                            <Key frame="60" value="-68.5547" />
+                                                            <Key frame="70" value="-68.7305" />
+                                                            <Key frame="80" value="-68.5547" />
+                                                            <Key frame="90" value="-68.7305" />
+                                                            <Key frame="100" value="-68.5547" />
+                                                            <Key frame="110" value="-68.7305" />
+                                                            <Key frame="120" value="-68.5547" />
+                                                            <Key frame="130" value="-68.7305" />
+                                                            <Key frame="150" value="-46.1426" />
+                                                            <Key frame="165" value="-48.3398" />
+                                                            <Key frame="180" value="-46.1426" />
+                                                            <Key frame="195" value="-48.3398" />
+                                                            <Key frame="210" value="-46.1426" />
+                                                            <Key frame="225" value="-48.3398" />
+                                                            <Key frame="240" value="-46.1426" />
+                                                            <Key frame="255" value="-48.3398" />
+                                                            <Key frame="270" value="-46.1426" />
+                                                            <Key frame="285" value="-48.3398" />
+                                                            <Key frame="310" value="-2.54882" />
+                                                            <Key frame="315" value="12.3047" />
+                                                            <Key frame="320" value="39.0234" />
+                                                            <Key frame="325" value="-2.54882" />
+                                                            <Key frame="330" value="12.3047" />
+                                                            <Key frame="335" value="39.0234" />
+                                                            <Key frame="340" value="-2.54882" />
+                                                            <Key frame="345" value="12.3047" />
+                                                            <Key frame="350" value="39.0234" />
+                                                            <Key frame="355" value="-2.54882" />
+                                                            <Key frame="360" value="12.3047" />
+                                                            <Key frame="365" value="39.0234" />
+                                                            <Key frame="370" value="-2.54882" />
+                                                            <Key frame="375" value="12.3047" />
+                                                            <Key frame="380" value="39.0234" />
+                                                            <Key frame="385" value="-2.54882" />
+                                                            <Key frame="390" value="12.3047" />
+                                                            <Key frame="395" value="39.0234" />
+                                                            <Key frame="400" value="-2.54882" />
+                                                            <Key frame="405" value="12.3047" />
+                                                            <Key frame="410" value="39.0234" />
+                                                            <Key frame="415" value="-2.54882" />
+                                                            <Key frame="420" value="12.3047" />
+                                                            <Key frame="425" value="39.0234" />
+                                                            <Key frame="480" value="-27.334" />
+                                                            <Key frame="495" value="-26.1035" />
+                                                            <Key frame="511" value="-27.334" />
+                                                            <Key frame="527" value="-26.1035" />
+                                                            <Key frame="543" value="-27.334" />
+                                                            <Key frame="559" value="-26.1035" />
+                                                            <Key frame="575" value="-27.334" />
+                                                            <Key frame="590" value="-26.1035" />
+                                                            <Key frame="606" value="-27.334" />
+                                                            <Key frame="620" value="-26.1035" />
+                                                            <Key frame="636" value="-27.334" />
+                                                            <Key frame="665" value="-53.4375" />
+                                                            <Key frame="680" value="-53.4375" />
+                                                            <Key frame="695" value="-53.0859" />
+                                                            <Key frame="710" value="-53.4375" />
+                                                            <Key frame="725" value="-53.4375" />
+                                                            <Key frame="740" value="-53.0859" />
+                                                            <Key frame="755" value="-53.4375" />
+                                                            <Key frame="770" value="-53.4375" />
+                                                            <Key frame="785" value="-53.0859" />
+                                                            <Key frame="795" value="-52.4707" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="LHand" mute="0" unit="1">
+                                                            <Key frame="20" value="0.718805" />
+                                                            <Key frame="30" value="0.709139" />
+                                                            <Key frame="40" value="0.718805" />
+                                                            <Key frame="50" value="0.709139" />
+                                                            <Key frame="60" value="0.718805" />
+                                                            <Key frame="70" value="0.709139" />
+                                                            <Key frame="80" value="0.718805" />
+                                                            <Key frame="90" value="0.709139" />
+                                                            <Key frame="100" value="0.718805" />
+                                                            <Key frame="110" value="0.709139" />
+                                                            <Key frame="120" value="0.718805" />
+                                                            <Key frame="130" value="0.709139" />
+                                                            <Key frame="150" value="0.487698" />
+                                                            <Key frame="165" value="0.499121" />
+                                                            <Key frame="180" value="0.487698" />
+                                                            <Key frame="195" value="0.499121" />
+                                                            <Key frame="210" value="0.487698" />
+                                                            <Key frame="225" value="0.499121" />
+                                                            <Key frame="240" value="0.487698" />
+                                                            <Key frame="255" value="0.499121" />
+                                                            <Key frame="270" value="0.487698" />
+                                                            <Key frame="285" value="0.499121" />
+                                                            <Key frame="310" value="0.273286" />
+                                                            <Key frame="315" value="0.273286" />
+                                                            <Key frame="320" value="0.273286" />
+                                                            <Key frame="325" value="0.273286" />
+                                                            <Key frame="330" value="0.273286" />
+                                                            <Key frame="335" value="0.273286" />
+                                                            <Key frame="340" value="0.273286" />
+                                                            <Key frame="345" value="0.273286" />
+                                                            <Key frame="350" value="0.273286" />
+                                                            <Key frame="355" value="0.273286" />
+                                                            <Key frame="360" value="0.273286" />
+                                                            <Key frame="365" value="0.273286" />
+                                                            <Key frame="370" value="0.273286" />
+                                                            <Key frame="375" value="0.273286" />
+                                                            <Key frame="380" value="0.273286" />
+                                                            <Key frame="385" value="0.273286" />
+                                                            <Key frame="390" value="0.273286" />
+                                                            <Key frame="395" value="0.273286" />
+                                                            <Key frame="400" value="0.273286" />
+                                                            <Key frame="405" value="0.273286" />
+                                                            <Key frame="410" value="0.273286" />
+                                                            <Key frame="415" value="0.273286" />
+                                                            <Key frame="420" value="0.273286" />
+                                                            <Key frame="425" value="0.273286" />
+                                                            <Key frame="480" value="0.495606" />
+                                                            <Key frame="495" value="0.495606" />
+                                                            <Key frame="511" value="0.495606" />
+                                                            <Key frame="527" value="0.495606" />
+                                                            <Key frame="543" value="0.495606" />
+                                                            <Key frame="559" value="0.495606" />
+                                                            <Key frame="575" value="0.495606" />
+                                                            <Key frame="590" value="0.495606" />
+                                                            <Key frame="606" value="0.495606" />
+                                                            <Key frame="620" value="0.495606" />
+                                                            <Key frame="636" value="0.495606" />
+                                                            <Key frame="665" value="0.435852" />
+                                                            <Key frame="680" value="0.435852" />
+                                                            <Key frame="695" value="0.435852" />
+                                                            <Key frame="710" value="0.435852" />
+                                                            <Key frame="725" value="0.435852" />
+                                                            <Key frame="740" value="0.435852" />
+                                                            <Key frame="755" value="0.435852" />
+                                                            <Key frame="770" value="0.435852" />
+                                                            <Key frame="785" value="0.435852" />
+                                                            <Key frame="795" value="0.435852" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="LShoulderPitch" mute="0" unit="0">
+                                                            <Key frame="20" value="89.4727" />
+                                                            <Key frame="30" value="89.9121" />
+                                                            <Key frame="40" value="89.4727" />
+                                                            <Key frame="50" value="89.9121" />
+                                                            <Key frame="60" value="89.4727" />
+                                                            <Key frame="70" value="89.9121" />
+                                                            <Key frame="80" value="89.4727" />
+                                                            <Key frame="90" value="89.9121" />
+                                                            <Key frame="100" value="89.4727" />
+                                                            <Key frame="110" value="89.9121" />
+                                                            <Key frame="120" value="89.4727" />
+                                                            <Key frame="130" value="89.9121" />
+                                                            <Key frame="150" value="105.645" />
+                                                            <Key frame="165" value="104.15" />
+                                                            <Key frame="180" value="105.645" />
+                                                            <Key frame="195" value="104.15" />
+                                                            <Key frame="210" value="105.645" />
+                                                            <Key frame="225" value="104.15" />
+                                                            <Key frame="240" value="105.645" />
+                                                            <Key frame="255" value="104.15" />
+                                                            <Key frame="270" value="105.645" />
+                                                            <Key frame="285" value="104.15" />
+                                                            <Key frame="310" value="-97.9101" />
+                                                            <Key frame="315" value="-96.7676" />
+                                                            <Key frame="320" value="-95.8887" />
+                                                            <Key frame="325" value="-97.9101" />
+                                                            <Key frame="330" value="-96.7676" />
+                                                            <Key frame="335" value="-95.8887" />
+                                                            <Key frame="340" value="-97.9101" />
+                                                            <Key frame="345" value="-96.7676" />
+                                                            <Key frame="350" value="-95.8887" />
+                                                            <Key frame="355" value="-97.9101" />
+                                                            <Key frame="360" value="-96.7676" />
+                                                            <Key frame="365" value="-95.8887" />
+                                                            <Key frame="370" value="-97.9101" />
+                                                            <Key frame="375" value="-96.7676" />
+                                                            <Key frame="380" value="-95.8887" />
+                                                            <Key frame="385" value="-97.9101" />
+                                                            <Key frame="390" value="-96.7676" />
+                                                            <Key frame="395" value="-95.8887" />
+                                                            <Key frame="400" value="-97.9101" />
+                                                            <Key frame="405" value="-96.7676" />
+                                                            <Key frame="410" value="-95.8887" />
+                                                            <Key frame="415" value="-97.9101" />
+                                                            <Key frame="420" value="-96.7676" />
+                                                            <Key frame="425" value="-95.8887" />
+                                                            <Key frame="480" value="12.7441" />
+                                                            <Key frame="495" value="-0.615236" />
+                                                            <Key frame="511" value="12.7441" />
+                                                            <Key frame="527" value="-0.615236" />
+                                                            <Key frame="543" value="12.7441" />
+                                                            <Key frame="559" value="-0.615236" />
+                                                            <Key frame="575" value="12.7441" />
+                                                            <Key frame="590" value="-0.615236" />
+                                                            <Key frame="606" value="12.7441" />
+                                                            <Key frame="620" value="-0.615236" />
+                                                            <Key frame="636" value="12.7441" />
+                                                            <Key frame="665" value="-86.1328" />
+                                                            <Key frame="680" value="-56.7774" />
+                                                            <Key frame="695" value="-89.3848" />
+                                                            <Key frame="710" value="-86.1328" />
+                                                            <Key frame="725" value="-56.7774" />
+                                                            <Key frame="740" value="-89.3848" />
+                                                            <Key frame="755" value="-86.1328" />
+                                                            <Key frame="770" value="-56.7774" />
+                                                            <Key frame="785" value="-89.3848" />
+                                                            <Key frame="795" value="71.8945" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="LShoulderRoll" mute="0" unit="0">
+                                                            <Key frame="20" value="19.7754" />
+                                                            <Key frame="30" value="19.6875" />
+                                                            <Key frame="40" value="19.7754" />
+                                                            <Key frame="50" value="19.6875" />
+                                                            <Key frame="60" value="19.7754" />
+                                                            <Key frame="70" value="19.6875" />
+                                                            <Key frame="80" value="19.7754" />
+                                                            <Key frame="90" value="19.6875" />
+                                                            <Key frame="100" value="19.7754" />
+                                                            <Key frame="110" value="19.6875" />
+                                                            <Key frame="120" value="19.7754" />
+                                                            <Key frame="130" value="19.6875" />
+                                                            <Key frame="150" value="25.3125" />
+                                                            <Key frame="165" value="24.6973" />
+                                                            <Key frame="180" value="25.3125" />
+                                                            <Key frame="195" value="24.6973" />
+                                                            <Key frame="210" value="25.3125" />
+                                                            <Key frame="225" value="24.6973" />
+                                                            <Key frame="240" value="25.3125" />
+                                                            <Key frame="255" value="24.6973" />
+                                                            <Key frame="270" value="25.3125" />
+                                                            <Key frame="285" value="24.6973" />
+                                                            <Key frame="310" value="44.0332" />
+                                                            <Key frame="315" value="42.8027" />
+                                                            <Key frame="320" value="42.627" />
+                                                            <Key frame="325" value="44.0332" />
+                                                            <Key frame="330" value="42.8027" />
+                                                            <Key frame="335" value="42.627" />
+                                                            <Key frame="340" value="44.0332" />
+                                                            <Key frame="345" value="42.8027" />
+                                                            <Key frame="350" value="42.627" />
+                                                            <Key frame="355" value="44.0332" />
+                                                            <Key frame="360" value="42.8027" />
+                                                            <Key frame="365" value="42.627" />
+                                                            <Key frame="370" value="44.0332" />
+                                                            <Key frame="375" value="42.8027" />
+                                                            <Key frame="380" value="42.627" />
+                                                            <Key frame="385" value="44.0332" />
+                                                            <Key frame="390" value="42.8027" />
+                                                            <Key frame="395" value="42.627" />
+                                                            <Key frame="400" value="44.0332" />
+                                                            <Key frame="405" value="42.8027" />
+                                                            <Key frame="410" value="42.627" />
+                                                            <Key frame="415" value="44.0332" />
+                                                            <Key frame="420" value="42.8027" />
+                                                            <Key frame="425" value="42.627" />
+                                                            <Key frame="480" value="7.82226" />
+                                                            <Key frame="495" value="9.58008" />
+                                                            <Key frame="511" value="7.82226" />
+                                                            <Key frame="527" value="9.58008" />
+                                                            <Key frame="543" value="7.82226" />
+                                                            <Key frame="559" value="9.58008" />
+                                                            <Key frame="575" value="7.82226" />
+                                                            <Key frame="590" value="9.58008" />
+                                                            <Key frame="606" value="7.82226" />
+                                                            <Key frame="620" value="9.58008" />
+                                                            <Key frame="636" value="7.82226" />
+                                                            <Key frame="665" value="1.23047" />
+                                                            <Key frame="680" value="0.5" />
+                                                            <Key frame="695" value="22.6758" />
+                                                            <Key frame="710" value="1.23047" />
+                                                            <Key frame="725" value="0.5" />
+                                                            <Key frame="740" value="22.6758" />
+                                                            <Key frame="755" value="1.23047" />
+                                                            <Key frame="770" value="0.5" />
+                                                            <Key frame="785" value="22.6758" />
+                                                            <Key frame="795" value="27.5098" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="LWristYaw" mute="0" unit="0">
+                                                            <Key frame="20" value="-25.3152" />
+                                                            <Key frame="30" value="-24.8758" />
+                                                            <Key frame="40" value="-25.3152" />
+                                                            <Key frame="50" value="-24.8758" />
+                                                            <Key frame="60" value="-25.3152" />
+                                                            <Key frame="70" value="-24.8758" />
+                                                            <Key frame="80" value="-25.3152" />
+                                                            <Key frame="90" value="-24.8758" />
+                                                            <Key frame="100" value="-25.3152" />
+                                                            <Key frame="110" value="-24.8758" />
+                                                            <Key frame="120" value="-25.3152" />
+                                                            <Key frame="130" value="-24.8758" />
+                                                            <Key frame="150" value="104.5" />
+                                                            <Key frame="165" value="92.3718" />
+                                                            <Key frame="180" value="104.5" />
+                                                            <Key frame="195" value="92.3718" />
+                                                            <Key frame="210" value="104.5" />
+                                                            <Key frame="225" value="92.3718" />
+                                                            <Key frame="240" value="104.5" />
+                                                            <Key frame="255" value="92.3718" />
+                                                            <Key frame="270" value="104.5" />
+                                                            <Key frame="285" value="92.3718" />
+                                                            <Key frame="310" value="-81.3901" />
+                                                            <Key frame="315" value="-67.679" />
+                                                            <Key frame="320" value="-96.156" />
+                                                            <Key frame="325" value="-81.3901" />
+                                                            <Key frame="330" value="-67.679" />
+                                                            <Key frame="335" value="-96.156" />
+                                                            <Key frame="340" value="-81.3901" />
+                                                            <Key frame="345" value="-67.679" />
+                                                            <Key frame="350" value="-96.156" />
+                                                            <Key frame="355" value="-81.3901" />
+                                                            <Key frame="360" value="-67.679" />
+                                                            <Key frame="365" value="-96.156" />
+                                                            <Key frame="370" value="-81.3901" />
+                                                            <Key frame="375" value="-67.679" />
+                                                            <Key frame="380" value="-96.156" />
+                                                            <Key frame="385" value="-81.3901" />
+                                                            <Key frame="390" value="-67.679" />
+                                                            <Key frame="395" value="-96.156" />
+                                                            <Key frame="400" value="-81.3901" />
+                                                            <Key frame="405" value="-67.679" />
+                                                            <Key frame="410" value="-96.156" />
+                                                            <Key frame="415" value="-81.3901" />
+                                                            <Key frame="420" value="-67.679" />
+                                                            <Key frame="425" value="-96.156" />
+                                                            <Key frame="480" value="38.67" />
+                                                            <Key frame="495" value="17.7517" />
+                                                            <Key frame="511" value="38.67" />
+                                                            <Key frame="527" value="17.7517" />
+                                                            <Key frame="543" value="38.67" />
+                                                            <Key frame="559" value="17.7517" />
+                                                            <Key frame="575" value="38.67" />
+                                                            <Key frame="590" value="17.7517" />
+                                                            <Key frame="606" value="38.67" />
+                                                            <Key frame="620" value="17.7517" />
+                                                            <Key frame="636" value="38.67" />
+                                                            <Key frame="665" value="-38.8506" />
+                                                            <Key frame="680" value="-22.3269" />
+                                                            <Key frame="695" value="-33.7528" />
+                                                            <Key frame="710" value="-38.8506" />
+                                                            <Key frame="725" value="-22.3269" />
+                                                            <Key frame="740" value="-33.7528" />
+                                                            <Key frame="755" value="-38.8506" />
+                                                            <Key frame="770" value="-22.3269" />
+                                                            <Key frame="785" value="-33.7528" />
+                                                            <Key frame="795" value="-20.657" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="RElbowRoll" mute="0" unit="0">
+                                                            <Key frame="20" value="0.615236" />
+                                                            <Key frame="30" value="0.9668" />
+                                                            <Key frame="40" value="0.615236" />
+                                                            <Key frame="50" value="0.9668" />
+                                                            <Key frame="60" value="0.615236" />
+                                                            <Key frame="70" value="0.9668" />
+                                                            <Key frame="80" value="0.615236" />
+                                                            <Key frame="90" value="0.9668" />
+                                                            <Key frame="100" value="0.615236" />
+                                                            <Key frame="110" value="0.9668" />
+                                                            <Key frame="120" value="0.615236" />
+                                                            <Key frame="130" value="0.9668" />
+                                                            <Key frame="150" value="89.3848" />
+                                                            <Key frame="165" value="80.1562" />
+                                                            <Key frame="180" value="89.3848" />
+                                                            <Key frame="195" value="80.1562" />
+                                                            <Key frame="210" value="89.3848" />
+                                                            <Key frame="225" value="80.1562" />
+                                                            <Key frame="240" value="89.3848" />
+                                                            <Key frame="255" value="80.1562" />
+                                                            <Key frame="270" value="89.3848" />
+                                                            <Key frame="285" value="80.1562" />
+                                                            <Key frame="310" value="89.5" />
+                                                            <Key frame="315" value="89.5" />
+                                                            <Key frame="320" value="89.5" />
+                                                            <Key frame="325" value="89.5" />
+                                                            <Key frame="330" value="89.5" />
+                                                            <Key frame="335" value="89.5" />
+                                                            <Key frame="340" value="89.5" />
+                                                            <Key frame="345" value="89.5" />
+                                                            <Key frame="350" value="89.5" />
+                                                            <Key frame="355" value="89.5" />
+                                                            <Key frame="360" value="89.5" />
+                                                            <Key frame="365" value="89.5" />
+                                                            <Key frame="370" value="89.5" />
+                                                            <Key frame="375" value="89.5" />
+                                                            <Key frame="380" value="89.5" />
+                                                            <Key frame="385" value="89.5" />
+                                                            <Key frame="390" value="89.5" />
+                                                            <Key frame="395" value="89.5" />
+                                                            <Key frame="400" value="89.5" />
+                                                            <Key frame="405" value="89.5" />
+                                                            <Key frame="410" value="89.5" />
+                                                            <Key frame="415" value="89.5" />
+                                                            <Key frame="420" value="89.5" />
+                                                            <Key frame="425" value="89.5" />
+                                                            <Key frame="480" value="61.3477" />
+                                                            <Key frame="495" value="61.7871" />
+                                                            <Key frame="511" value="61.3477" />
+                                                            <Key frame="527" value="61.7871" />
+                                                            <Key frame="543" value="61.3477" />
+                                                            <Key frame="559" value="61.7871" />
+                                                            <Key frame="575" value="61.3477" />
+                                                            <Key frame="590" value="61.7871" />
+                                                            <Key frame="606" value="61.3477" />
+                                                            <Key frame="620" value="61.7871" />
+                                                            <Key frame="636" value="61.3477" />
+                                                            <Key frame="665" value="8.78906" />
+                                                            <Key frame="680" value="9.14062" />
+                                                            <Key frame="695" value="4.30664" />
+                                                            <Key frame="710" value="8.78906" />
+                                                            <Key frame="725" value="9.14062" />
+                                                            <Key frame="740" value="4.30664" />
+                                                            <Key frame="755" value="8.78906" />
+                                                            <Key frame="770" value="9.14062" />
+                                                            <Key frame="785" value="4.30664" />
+                                                            <Key frame="795" value="0.5" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="RElbowYaw" mute="0" unit="0">
+                                                            <Key frame="20" value="70.1367" />
+                                                            <Key frame="30" value="70.2246" />
+                                                            <Key frame="40" value="70.1367" />
+                                                            <Key frame="50" value="70.2246" />
+                                                            <Key frame="60" value="70.1367" />
+                                                            <Key frame="70" value="70.2246" />
+                                                            <Key frame="80" value="70.1367" />
+                                                            <Key frame="90" value="70.2246" />
+                                                            <Key frame="100" value="70.1367" />
+                                                            <Key frame="110" value="70.2246" />
+                                                            <Key frame="120" value="70.1367" />
+                                                            <Key frame="130" value="70.2246" />
+                                                            <Key frame="150" value="0.351564" />
+                                                            <Key frame="165" value="7.38281" />
+                                                            <Key frame="180" value="0.351564" />
+                                                            <Key frame="195" value="7.38281" />
+                                                            <Key frame="210" value="0.351564" />
+                                                            <Key frame="225" value="7.38281" />
+                                                            <Key frame="240" value="0.351564" />
+                                                            <Key frame="255" value="7.38281" />
+                                                            <Key frame="270" value="0.351564" />
+                                                            <Key frame="285" value="7.38281" />
+                                                            <Key frame="310" value="42.9785" />
+                                                            <Key frame="315" value="42.9785" />
+                                                            <Key frame="320" value="42.9785" />
+                                                            <Key frame="325" value="42.9785" />
+                                                            <Key frame="330" value="42.9785" />
+                                                            <Key frame="335" value="42.9785" />
+                                                            <Key frame="340" value="42.9785" />
+                                                            <Key frame="345" value="42.9785" />
+                                                            <Key frame="350" value="42.9785" />
+                                                            <Key frame="355" value="42.9785" />
+                                                            <Key frame="360" value="42.9785" />
+                                                            <Key frame="365" value="42.9785" />
+                                                            <Key frame="370" value="42.9785" />
+                                                            <Key frame="375" value="42.9785" />
+                                                            <Key frame="380" value="42.9785" />
+                                                            <Key frame="385" value="42.9785" />
+                                                            <Key frame="390" value="42.9785" />
+                                                            <Key frame="395" value="42.9785" />
+                                                            <Key frame="400" value="42.9785" />
+                                                            <Key frame="405" value="42.9785" />
+                                                            <Key frame="410" value="42.9785" />
+                                                            <Key frame="415" value="42.9785" />
+                                                            <Key frame="420" value="42.9785" />
+                                                            <Key frame="425" value="42.9785" />
+                                                            <Key frame="480" value="22.3242" />
+                                                            <Key frame="495" value="21.2695" />
+                                                            <Key frame="511" value="22.3242" />
+                                                            <Key frame="527" value="21.2695" />
+                                                            <Key frame="543" value="22.3242" />
+                                                            <Key frame="559" value="21.2695" />
+                                                            <Key frame="575" value="22.3242" />
+                                                            <Key frame="590" value="21.2695" />
+                                                            <Key frame="606" value="22.3242" />
+                                                            <Key frame="620" value="21.2695" />
+                                                            <Key frame="636" value="22.3242" />
+                                                            <Key frame="665" value="68.3789" />
+                                                            <Key frame="680" value="68.0273" />
+                                                            <Key frame="695" value="67.6758" />
+                                                            <Key frame="710" value="68.3789" />
+                                                            <Key frame="725" value="68.0273" />
+                                                            <Key frame="740" value="67.6758" />
+                                                            <Key frame="755" value="68.3789" />
+                                                            <Key frame="770" value="68.0273" />
+                                                            <Key frame="785" value="67.6758" />
+                                                            <Key frame="795" value="68.9941" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="RHand" mute="0" unit="1">
+                                                            <Key frame="20" value="0.550088" />
+                                                            <Key frame="30" value="0.52812" />
+                                                            <Key frame="40" value="0.550088" />
+                                                            <Key frame="50" value="0.52812" />
+                                                            <Key frame="60" value="0.550088" />
+                                                            <Key frame="70" value="0.52812" />
+                                                            <Key frame="80" value="0.550088" />
+                                                            <Key frame="90" value="0.52812" />
+                                                            <Key frame="100" value="0.550088" />
+                                                            <Key frame="110" value="0.52812" />
+                                                            <Key frame="120" value="0.550088" />
+                                                            <Key frame="130" value="0.52812" />
+                                                            <Key frame="150" value="0.525483" />
+                                                            <Key frame="165" value="0.525483" />
+                                                            <Key frame="180" value="0.525483" />
+                                                            <Key frame="195" value="0.525483" />
+                                                            <Key frame="210" value="0.525483" />
+                                                            <Key frame="225" value="0.525483" />
+                                                            <Key frame="240" value="0.525483" />
+                                                            <Key frame="255" value="0.525483" />
+                                                            <Key frame="270" value="0.525483" />
+                                                            <Key frame="285" value="0.525483" />
+                                                            <Key frame="310" value="0.389279" />
+                                                            <Key frame="315" value="0.389279" />
+                                                            <Key frame="320" value="0.389279" />
+                                                            <Key frame="325" value="0.389279" />
+                                                            <Key frame="330" value="0.389279" />
+                                                            <Key frame="335" value="0.389279" />
+                                                            <Key frame="340" value="0.389279" />
+                                                            <Key frame="345" value="0.389279" />
+                                                            <Key frame="350" value="0.389279" />
+                                                            <Key frame="355" value="0.389279" />
+                                                            <Key frame="360" value="0.389279" />
+                                                            <Key frame="365" value="0.389279" />
+                                                            <Key frame="370" value="0.389279" />
+                                                            <Key frame="375" value="0.389279" />
+                                                            <Key frame="380" value="0.389279" />
+                                                            <Key frame="385" value="0.389279" />
+                                                            <Key frame="390" value="0.389279" />
+                                                            <Key frame="395" value="0.389279" />
+                                                            <Key frame="400" value="0.389279" />
+                                                            <Key frame="405" value="0.389279" />
+                                                            <Key frame="410" value="0.389279" />
+                                                            <Key frame="415" value="0.389279" />
+                                                            <Key frame="420" value="0.389279" />
+                                                            <Key frame="425" value="0.389279" />
+                                                            <Key frame="480" value="0.460457" />
+                                                            <Key frame="495" value="0.460457" />
+                                                            <Key frame="511" value="0.460457" />
+                                                            <Key frame="527" value="0.460457" />
+                                                            <Key frame="543" value="0.460457" />
+                                                            <Key frame="559" value="0.460457" />
+                                                            <Key frame="575" value="0.460457" />
+                                                            <Key frame="590" value="0.460457" />
+                                                            <Key frame="606" value="0.460457" />
+                                                            <Key frame="620" value="0.460457" />
+                                                            <Key frame="636" value="0.460457" />
+                                                            <Key frame="665" value="0.572056" />
+                                                            <Key frame="680" value="0.572056" />
+                                                            <Key frame="695" value="0.540422" />
+                                                            <Key frame="710" value="0.572056" />
+                                                            <Key frame="725" value="0.572056" />
+                                                            <Key frame="740" value="0.540422" />
+                                                            <Key frame="755" value="0.572056" />
+                                                            <Key frame="770" value="0.572056" />
+                                                            <Key frame="785" value="0.540422" />
+                                                            <Key frame="795" value="0.529877" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="RShoulderPitch" mute="0" unit="0">
+                                                            <Key frame="20" value="-101.25" />
+                                                            <Key frame="30" value="-79.8047" />
+                                                            <Key frame="40" value="-101.25" />
+                                                            <Key frame="50" value="-79.8047" />
+                                                            <Key frame="60" value="-101.25" />
+                                                            <Key frame="70" value="-79.8047" />
+                                                            <Key frame="80" value="-101.25" />
+                                                            <Key frame="90" value="-79.8047" />
+                                                            <Key frame="100" value="-101.25" />
+                                                            <Key frame="110" value="-79.8047" />
+                                                            <Key frame="120" value="-101.25" />
+                                                            <Key frame="130" value="-79.8047" />
+                                                            <Key frame="150" value="76.2012" />
+                                                            <Key frame="165" value="64.5117" />
+                                                            <Key frame="180" value="76.2012" />
+                                                            <Key frame="195" value="64.5117" />
+                                                            <Key frame="210" value="76.2012" />
+                                                            <Key frame="225" value="64.5117" />
+                                                            <Key frame="240" value="76.2012" />
+                                                            <Key frame="255" value="64.5117" />
+                                                            <Key frame="270" value="76.2012" />
+                                                            <Key frame="285" value="64.5117" />
+                                                            <Key frame="310" value="23.6426" />
+                                                            <Key frame="315" value="23.6426" />
+                                                            <Key frame="320" value="23.6426" />
+                                                            <Key frame="325" value="23.6426" />
+                                                            <Key frame="330" value="23.6426" />
+                                                            <Key frame="335" value="23.6426" />
+                                                            <Key frame="340" value="23.6426" />
+                                                            <Key frame="345" value="23.6426" />
+                                                            <Key frame="350" value="23.6426" />
+                                                            <Key frame="355" value="23.6426" />
+                                                            <Key frame="360" value="23.6426" />
+                                                            <Key frame="365" value="23.6426" />
+                                                            <Key frame="370" value="23.6426" />
+                                                            <Key frame="375" value="23.6426" />
+                                                            <Key frame="380" value="23.6426" />
+                                                            <Key frame="385" value="23.6426" />
+                                                            <Key frame="390" value="23.6426" />
+                                                            <Key frame="395" value="23.6426" />
+                                                            <Key frame="400" value="23.6426" />
+                                                            <Key frame="405" value="23.6426" />
+                                                            <Key frame="410" value="23.6426" />
+                                                            <Key frame="415" value="23.6426" />
+                                                            <Key frame="420" value="23.6426" />
+                                                            <Key frame="425" value="23.6426" />
+                                                            <Key frame="480" value="16.9629" />
+                                                            <Key frame="495" value="0.263673" />
+                                                            <Key frame="511" value="16.9629" />
+                                                            <Key frame="527" value="0.263673" />
+                                                            <Key frame="543" value="16.9629" />
+                                                            <Key frame="559" value="0.263673" />
+                                                            <Key frame="575" value="16.9629" />
+                                                            <Key frame="590" value="0.263673" />
+                                                            <Key frame="606" value="16.9629" />
+                                                            <Key frame="620" value="0.263673" />
+                                                            <Key frame="636" value="16.9629" />
+                                                            <Key frame="665" value="-89.4727" />
+                                                            <Key frame="680" value="-52.3828" />
+                                                            <Key frame="695" value="-81.2109" />
+                                                            <Key frame="710" value="-89.4727" />
+                                                            <Key frame="725" value="-52.3828" />
+                                                            <Key frame="740" value="-81.2109" />
+                                                            <Key frame="755" value="-89.4727" />
+                                                            <Key frame="770" value="-52.3828" />
+                                                            <Key frame="785" value="-81.2109" />
+                                                            <Key frame="795" value="87.3633" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="RShoulderRoll" mute="0" unit="0">
+                                                            <Key frame="20" value="-11.6016" />
+                                                            <Key frame="30" value="-11.6895" />
+                                                            <Key frame="40" value="-11.6016" />
+                                                            <Key frame="50" value="-11.6895" />
+                                                            <Key frame="60" value="-11.6016" />
+                                                            <Key frame="70" value="-11.6895" />
+                                                            <Key frame="80" value="-11.6016" />
+                                                            <Key frame="90" value="-11.6895" />
+                                                            <Key frame="100" value="-11.6016" />
+                                                            <Key frame="110" value="-11.6895" />
+                                                            <Key frame="120" value="-11.6016" />
+                                                            <Key frame="130" value="-11.6895" />
+                                                            <Key frame="150" value="-50.0098" />
+                                                            <Key frame="165" value="-45.7031" />
+                                                            <Key frame="180" value="-50.0098" />
+                                                            <Key frame="195" value="-45.7031" />
+                                                            <Key frame="210" value="-50.0098" />
+                                                            <Key frame="225" value="-45.7031" />
+                                                            <Key frame="240" value="-50.0098" />
+                                                            <Key frame="255" value="-45.7031" />
+                                                            <Key frame="270" value="-50.0098" />
+                                                            <Key frame="285" value="-45.7031" />
+                                                            <Key frame="310" value="-45.1758" />
+                                                            <Key frame="315" value="-45.1758" />
+                                                            <Key frame="320" value="-45.1758" />
+                                                            <Key frame="325" value="-45.1758" />
+                                                            <Key frame="330" value="-45.1758" />
+                                                            <Key frame="335" value="-45.1758" />
+                                                            <Key frame="340" value="-45.1758" />
+                                                            <Key frame="345" value="-45.1758" />
+                                                            <Key frame="350" value="-45.1758" />
+                                                            <Key frame="355" value="-45.1758" />
+                                                            <Key frame="360" value="-45.1758" />
+                                                            <Key frame="365" value="-45.1758" />
+                                                            <Key frame="370" value="-45.1758" />
+                                                            <Key frame="375" value="-45.1758" />
+                                                            <Key frame="380" value="-45.1758" />
+                                                            <Key frame="385" value="-45.1758" />
+                                                            <Key frame="390" value="-45.1758" />
+                                                            <Key frame="395" value="-45.1758" />
+                                                            <Key frame="400" value="-45.1758" />
+                                                            <Key frame="405" value="-45.1758" />
+                                                            <Key frame="410" value="-45.1758" />
+                                                            <Key frame="415" value="-45.1758" />
+                                                            <Key frame="420" value="-45.1758" />
+                                                            <Key frame="425" value="-45.1758" />
+                                                            <Key frame="480" value="-11.0742" />
+                                                            <Key frame="495" value="-11.6895" />
+                                                            <Key frame="511" value="-11.0742" />
+                                                            <Key frame="527" value="-11.6895" />
+                                                            <Key frame="543" value="-11.0742" />
+                                                            <Key frame="559" value="-11.6895" />
+                                                            <Key frame="575" value="-11.0742" />
+                                                            <Key frame="590" value="-11.6895" />
+                                                            <Key frame="606" value="-11.0742" />
+                                                            <Key frame="620" value="-11.6895" />
+                                                            <Key frame="636" value="-11.0742" />
+                                                            <Key frame="665" value="-23.6426" />
+                                                            <Key frame="680" value="-0.5" />
+                                                            <Key frame="695" value="-0.703127" />
+                                                            <Key frame="710" value="-23.6426" />
+                                                            <Key frame="725" value="-0.5" />
+                                                            <Key frame="740" value="-0.703127" />
+                                                            <Key frame="755" value="-23.6426" />
+                                                            <Key frame="770" value="-0.5" />
+                                                            <Key frame="785" value="-0.703127" />
+                                                            <Key frame="795" value="-28.8281" />
+                                                        </ActuatorCurve>
+                                                        <ActuatorCurve name="value" actuator="RWristYaw" mute="0" unit="0">
+                                                            <Key frame="20" value="-83.4996" />
+                                                            <Key frame="30" value="-83.0601" />
+                                                            <Key frame="40" value="-83.4996" />
+                                                            <Key frame="50" value="-83.0601" />
+                                                            <Key frame="60" value="-83.4996" />
+                                                            <Key frame="70" value="-83.0601" />
+                                                            <Key frame="80" value="-83.4996" />
+                                                            <Key frame="90" value="-83.0601" />
+                                                            <Key frame="100" value="-83.4996" />
+                                                            <Key frame="110" value="-83.0601" />
+                                                            <Key frame="120" value="-83.4996" />
+                                                            <Key frame="130" value="-83.0601" />
+                                                            <Key frame="150" value="-5.10013" />
+                                                            <Key frame="165" value="-11.9557" />
+                                                            <Key frame="180" value="-5.10013" />
+                                                            <Key frame="195" value="-11.9557" />
+                                                            <Key frame="210" value="-5.10013" />
+                                                            <Key frame="225" value="-11.9557" />
+                                                            <Key frame="240" value="-5.10013" />
+                                                            <Key frame="255" value="-11.9557" />
+                                                            <Key frame="270" value="-5.10013" />
+                                                            <Key frame="285" value="-11.9557" />
+                                                            <Key frame="310" value="2.28279" />
+                                                            <Key frame="315" value="2.28279" />
+                                                            <Key frame="320" value="2.28279" />
+                                                            <Key frame="325" value="2.28279" />
+                                                            <Key frame="330" value="2.28279" />
+                                                            <Key frame="335" value="2.28279" />
+                                                            <Key frame="340" value="2.28279" />
+                                                            <Key frame="345" value="2.28279" />
+                                                            <Key frame="350" value="2.28279" />
+                                                            <Key frame="355" value="2.28279" />
+                                                            <Key frame="360" value="2.28279" />
+                                                            <Key frame="365" value="2.28279" />
+                                                            <Key frame="370" value="2.28279" />
+                                                            <Key frame="375" value="2.28279" />
+                                                            <Key frame="380" value="2.28279" />
+                                                            <Key frame="385" value="2.28279" />
+                                                            <Key frame="390" value="2.28279" />
+                                                            <Key frame="395" value="2.28279" />
+                                                            <Key frame="400" value="2.28279" />
+                                                            <Key frame="405" value="2.28279" />
+                                                            <Key frame="410" value="2.28279" />
+                                                            <Key frame="415" value="2.28279" />
+                                                            <Key frame="420" value="2.28279" />
+                                                            <Key frame="425" value="2.28279" />
+                                                            <Key frame="480" value="-38.0595" />
+                                                            <Key frame="495" value="-34.1923" />
+                                                            <Key frame="511" value="-38.0595" />
+                                                            <Key frame="527" value="-34.1923" />
+                                                            <Key frame="543" value="-38.0595" />
+                                                            <Key frame="559" value="-34.1923" />
+                                                            <Key frame="575" value="-38.0595" />
+                                                            <Key frame="590" value="-34.1923" />
+                                                            <Key frame="606" value="-38.0595" />
+                                                            <Key frame="620" value="-34.1923" />
+                                                            <Key frame="636" value="-38.0595" />
+                                                            <Key frame="665" value="20.3006" />
+                                                            <Key frame="680" value="15.115" />
+                                                            <Key frame="695" value="21.2674" />
+                                                            <Key frame="710" value="20.3006" />
+                                                            <Key frame="725" value="15.115" />
+                                                            <Key frame="740" value="21.2674" />
+                                                            <Key frame="755" value="20.3006" />
+                                                            <Key frame="770" value="15.115" />
+                                                            <Key frame="785" value="21.2674" />
+                                                            <Key frame="795" value="22.2342" />
+                                                        </ActuatorCurve>
+                                                    </ActuatorList>
+                                                </Timeline>
+                                            </Box>
+                                            <Box name="Play Sound" id="2" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be wav or ogg (on virtual robot) and also mp3 (on a real robot).&#x0A;&#x0A;Note: There can be some delay to play ogg or mp3 (on a robot) files. We advise you to use wav if&#x0A;you want a fast play of the file." x="260" y="226">
+                                                <bitmap>media/images/box/interaction/play_music.png</bitmap>
+                                                <script language="4">
+                                                    <content>
+                                                        <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+</content>
+                                                </script>
+                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Starts the music." id="2" />
+                                                <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Stops the music." id="3" />
+                                                <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished or stopped." id="4" />
+                                                <Parameter name="File name" inherits_from_parent="0" content_type="4" value="/GangnamStyle.mp3" default_value="" tooltip="Name of the file you want to play.&#x0A;&#x0A;Note: You can click on the folder icon to browse the project content or import&#x0A;new files to the project." id="5" />
+                                                <Parameter name="Begin position (s)" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="0" max="600" tooltip="Position in seconds where the playing must start." id="6" />
+                                                <Parameter name="Volume (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="0" max="100" tooltip="Volume the file is played with." id="7" />
+                                                <Parameter name="Balance L/R" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="-1" max="1" tooltip="Value which determines if the sound is played more on the robot&apos;s left or right.&#x0A;You can particularly set it to:&#x0A;- -1 to play only on the left loudspeaker.&#x0A;- 0 to play on both loudspeakers.&#x0A;- 1 to play only on the right loudspeaker." id="8" />
+                                                <Parameter name="Play in loop" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="This parameter allows to play the file in loop. The playing will start each time at&#x0A;the beginning of the file." id="9" />
+                                                <Timeline enable="0">
+                                                    <BehaviorLayer name="behavior_layer1">
+                                                        <BehaviorKeyframe name="keyframe1" index="1">
+                                                            <Diagram>
+                                                                <Box name="Play Sound File" id="2" localization="8" tooltip="Play the sound." x="442" y="70">
+                                                                    <bitmap>media/images/box/interaction/play_music.png</bitmap>
+                                                                    <script language="4">
+                                                                        <content>
+                                                                            <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.player = ALProxy('ALAudioPlayer')
+        self.playerStop = ALProxy('ALAudioPlayer', True) #Create another proxy as wait is blocking if audioout is remote
+
+    def onLoad(self):
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.playerStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            if (self.getParameter("Play in loop")) :
+               id = self.player.post.playFileInLoop(p,self.getParameter("Volume (%)")/100.,self.getParameter("Balance L/R"))
+            else :
+               id = self.player.post.playFileFromPosition(p,self.getParameter("Begin position (s)"),self.getParameter("Volume (%)")/100.,self.getParameter("Balance L/R"))
+            self.ids.append(id)
+            self.player.wait(id, 0)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+</content>
+                                                                    </script>
+                                                                    <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                                    <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                                                    <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                                                    <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                                                    <Parameter name="Begin position (s)" inherits_from_parent="1" content_type="2" value="0" default_value="0" min="0" max="600" tooltip="Position in seconds where the playing must start." id="5" />
+                                                                    <Parameter name="Volume (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="0" max="100" tooltip="Volume the file is played with." id="6" />
+                                                                    <Parameter name="Balance L/R" inherits_from_parent="1" content_type="2" value="0" default_value="0" min="-1" max="1" tooltip="Value which determines if the sound is played more on the robot&apos;s left or right.&#x0A;You can particularly set it to:&#x0A;- -1 to play only on the left loudspeaker.&#x0A;- 0 to play on both loudspeakers.&#x0A;- 1 to play only on the right loudspeaker." id="7" />
+                                                                    <Parameter name="Play in loop" inherits_from_parent="1" content_type="0" value="0" default_value="0" tooltip="This parameter allows to play the file in loop. The playing will start each time at&#x0A;the beginning of the file." id="8" />
+                                                                </Box>
+                                                                <Box name="Get Attached File" id="1" localization="8" tooltip="Use this box to choose an attached file in its parameters. The filename will be sent on&#x0A;the output when the input is stimulated." x="216" y="71">
+                                                                    <bitmap>media/images/box/folder.png</bitmap>
+                                                                    <script language="4">
+                                                                        <content>
+                                                                            <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.framemanager = ALProxy("ALFrameManager")
+
+    def onInput_onStart(self):
+        self.onStopped(self.framemanager.getBehaviorPath(self.behaviorId) + self.getParameter("File name"))]]>
+</content>
+                                                                    </script>
+                                                                    <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                                    <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the filepath on the output." id="2" />
+                                                                    <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The filepath of the selected resource file." id="3" />
+                                                                    <Parameter name="File name" inherits_from_parent="1" content_type="4" value="" default_value="" tooltip="Name of the file which is going to be sent on the box output.&#x0A;&#x0A;Note: You can click on the folder icon to browse the project content or import&#x0A;new files to the project." id="4" />
+                                                                </Box>
+                                                                <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
+                                                                <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                                                <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
+                                                            </Diagram>
+                                                        </BehaviorKeyframe>
+                                                    </BehaviorLayer>
+                                                </Timeline>
+                                                <Resource name="Audio player" type="Lock" timeout="0" />
+                                            </Box>
+                                            <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                            <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
+                                            <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                            <Link inputowner="0" indexofinput="4" outputowner="1" indexofoutput="4" />
+                                        </Diagram>
+                                    </BehaviorKeyframe>
+                                </BehaviorLayer>
+                            </Timeline>
+                        </Box>
+                        <Box name="Show Accenture Image" id="13" localization="8" tooltip="display an image on the screen&#x0A;&#x0A;V1.0.0&#x0A;" x="113" y="154">
+                            <bitmap>media/images/box/interaction/rec_movie.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[
+
+class MyClass(GeneratedClass):
+
+    def onLoad(self):
+        self.frameManager = None
+        try:
+            self.frameManager = ALProxy("ALFrameManager")
+        except Exception as e:
+            self.logger.error(e)
+
+    def onUnload(self):
+        pass
+
+    def _getTabletService(self):
+        tabletService = None
+        try:
+            tabletService = self.session().service("ALTabletService")
+        except Exception as e:
+            self.logger.error(e)
+        return tabletService
+
+    def _getAbsoluteUrl(self, partial_url):
+        import os
+        subPath = os.path.join(self.packageUid(), os.path.normpath(partial_url).lstrip("\\/"))
+        # We create TabletService here in order to avoid
+        # problems with connections and disconnections of the tablet during the life of the application
+        return "http://%s/apps/%s" %(self._getTabletService().robotIp(), subPath.replace(os.path.sep, "/"))
+
+    def onInput_onStart(self):
+        # We create TabletService here in order to avoid
+        # problems with connections and disconnections of the tablet during the life of the application
+        tabletService = self._getTabletService()
+        if tabletService:
+            try:
+                url = self.getParameter("ImageUrl")
+                if url == '':
+                    self.logger.error("URL of the image is empty")
+                if not url.startswith('http'):
+                    url = self._getAbsoluteUrl(url)
+                tabletService.showImage(url)
+            except Exception as err:
+                self.logger.error("Error during ShowImage : %s " % err)
+                self.onStopped()
+        else:
+            self.logger.warning("No ALTabletService, can't display the image.")
+            self.onStopped()
+
+    def onInput_onHideImage(self):
+        # We create TabletService here in order to avoid
+        # problems with connections and disconnections of the tablet during the life of the application
+        tabletService = self._getTabletService()
+        if tabletService:
+            try:
+                tabletService.hideImage()
+            except Exception as err:
+                self.logger.error("Error during HideImage : %s " % err)
+                self.onStopped()
+        else:
+            self.logger.warning("No ALTabletService, can't hide the image.")
+            self.onStopped()
+
+    def onInput_onPreLoadImage(self):
+        # We create TabletService here in order to avoid
+        # problems with connections and disconnections of the tablet during the life of the application
+        tabletService = self._getTabletService()
+        if tabletService:
+            try:
+                partialUrl = self.getParameter("ImageUrl")
+                fullUrl = self._getAbsoluteUrl(partialUrl)
+                tabletService.preLoadImage(fullUrl)
+            except Exception as err:
+                self.logger.warning("Error during preLoadImage : %s " % err)
+                self.onStopped()
+        else:
+            self.logger.warning("No ALTabletService, can't preload the image.")
+            self.onStopped()
+
+    def onInput_onStop(self):
+        self.onUnload()
+        self.onStopped()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Input name="onHideImage" type="1" type_size="1" nature="1" inner="0" tooltip="Hide the image when a signal is received on this input." id="4" />
+                            <Input name="onPreLoadImage" type="1" type_size="1" nature="1" inner="0" tooltip="Preload the image when a signal is received on this input." id="5" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="6" />
+                            <Parameter name="ImageUrl" inherits_from_parent="0" content_type="3" value="Acceture.jpg" default_value="" custom_choice="0" tooltip='path of the image inside the &quot;html&quot; folder (e.g. &quot;/images/myimage.png&quot;' id="7" />
+                        </Box>
+                        <Box name="Show Web View" id="8" localization="8" tooltip="Shows the webview (html content) on the tablet.&#x0A;&#x0A;V1.0.0&#x0A;" x="588" y="111">
+                            <bitmap>media/images/box/internet/internet.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[
+
+class MyClass(GeneratedClass):
+
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        pass
+
+    def onUnload(self):
+        pass
+
+    def _getTabletService(self):
+        tabletService = None
+        try:
+            tabletService = self.session().service("ALTabletService")
+        except Exception as e:
+            self.logger.error(e)
+        return tabletService
+
+    def onInput_onStart(self):
+        # We create TabletService here in order to avoid
+        # problems with connections and disconnections of the tablet during the life of the application
+        tabletService = self._getTabletService()
+        if tabletService:
+            tabletService.showWebview("http://robotapis6982.azurewebsites.net/Dance")
+        else:
+            self.logger.warning("ALTabletService not found.")
+        self.onStopped()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                        </Box>
+                        <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="13" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="8" indexofinput="2" outputowner="1" indexofoutput="4" />
+                        <Link inputowner="0" indexofinput="4" outputowner="8" indexofoutput="3" />
+                    </Diagram>
+                </BehaviorKeyframe>
+            </BehaviorLayer>
+        </Timeline>
+    </Box>
+</ChoregrapheProject>

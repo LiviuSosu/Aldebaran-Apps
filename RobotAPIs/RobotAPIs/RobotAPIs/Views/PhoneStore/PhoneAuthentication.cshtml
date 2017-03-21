@@ -1,0 +1,27 @@
+﻿@model RobotAPIs.Models.PhoneNumberAuth
+
+@{
+    ViewBag.Title = "PhoneAuthentication";
+}
+
+<h2>PhoneAuthentication</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <div class="form-group btn-group" role="group" aria-label="...">
+                @using (Html.BeginForm(new { page = ViewBag.CurrentPage }))
+                {
+                    <input type="submit" value="Create" class="btn btn-success" />
+                        @*<button onclick="goBack()" class="btn btn-default">Cancel</button>*@
+                }
+            </div>
+        </div>
+    </div>
+}

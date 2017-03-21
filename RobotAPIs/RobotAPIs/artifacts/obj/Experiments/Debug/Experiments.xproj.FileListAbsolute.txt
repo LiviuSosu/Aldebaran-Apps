@@ -1,0 +1,15 @@
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\obj\Experiments\Debug\Experiments.xprojResolveAssemblyReference.cache
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\csc.exe
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\System.Collections.Immutable.dll
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\System.Reflection.Metadata.dll
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\vbc.exe
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\VBCSCompiler.exe
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\roslyn\VBCSCompiler.exe.config
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\Microsoft.ApplicationInsights.Extensions.Intercept_x86.dll
+C:\Users\liviu.sosu\Desktop\RobotAPIs\RobotAPIs\artifacts\bin\Experiments\Microsoft.ApplicationInsights.Extensions.Intercept_x64.dll

@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="position:center;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;">
+
+    <div style="position:center;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;">
+        <div style="padding:20px;">
+            @Html.ActionLink("Gagnam style", "GaganamDance", "Dance", null, new { @class = "btn btn-success", @style = "width:200px;" })
+        </div>
+
+        <div style="padding:20px;">
+            @Html.ActionLink("Rap Club", "RapDance", "Dance", null, new { @class = "btn btn-success", @style = "width:200px;" })
+        </div>
+
+        <div style="padding:20px;">
+            @Html.ActionLink("Avicii", "Avicii", "Dance", null, new { @class = "btn btn-success", @style = "width:200px;" })
+        </div>
+
+        <div style="padding:20px;">
+            @Html.ActionLink("Stop", "Stop", "Dance", null, new { @class = "btn btn-danger", @style = "width:200px;" })
+        </div>
+    </div>
+</div>

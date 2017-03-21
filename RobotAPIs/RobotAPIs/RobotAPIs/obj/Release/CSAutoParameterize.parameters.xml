@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="RobotAPIs.Models.RobotEntities-Web.config Connection String" description="RobotAPIs.Models.RobotEntities Connection String used in web.config by the application to access the database." defaultValue="RobotAPIs.Models.RobotEntities_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\liviu\.sosu\\Desktop\\RobotAPIs\\RobotAPIs\\RobotAPIs\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='RobotAPIs.Models.RobotEntities']/@connectionString" />
+  </parameter>
+</parameters>
