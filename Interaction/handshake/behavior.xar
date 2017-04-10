@@ -54,61 +54,6 @@
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         </Box>
-                        <Box name="Python Script" id="3" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="445" y="128">
-                            <bitmap>media/images/box/box-python-script.png</bitmap>
-                            <script language="4">
-                                <content>
-                                    <![CDATA[from RandomSentences import RandomSentences
-class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self)
-        self.memory = ALProxy("ALMemory")
-        self.tts = ALProxy("ALTextToSpeech")
-
-    def onLoad(self):
-        #put initialization code here
-        my_behavior_path = self.behaviorAbsolutePath()
-        libs_folder_path = os.path.join(my_behavior_path, "lib")
-        if libs_folder_path not in sys.path:
-            sys.path.insert(0, libs_folder_path)
-        pass
-
-    def onUnload(self):
-        #put clean-up code here
-        pass
-
-    def onInput_onStart(self):
-        #self.onStopped() #activate the output of the box
-        step = self.memory.getData("step1")
-        stop = self.memory.getData("stop")
-        if(stop == 0):
-            x = RandomSentences()
-            if(step > 9):
-                self.tts.say(x.getRandomShakeHandsGiveUp())
-                self.done_output()
-            else:
-                step += 1
-                if(step == 3):
-                    self.tts.say(x.getRandomShakeHandsSentence1())
-                if(step == 6):
-                    self.tts.say(x.getRandomShakeHandsSentence2())
-                self.memory.insertData("step1",step)
-                self.continue_output()
-        else:
-            self.done_output()
-        pass
-
-    def onInput_onStop(self):
-        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
-        self.onStopped() #activate the output of the box]]>
-</content>
-                            </script>
-                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                            <Output name="continue_output" type="1" type_size="1" nature="2" inner="0" tooltip="" id="4" />
-                            <Output name="done_output" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
-                        </Box>
                         <Box name="Strech Hand" id="6" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="290" y="100">
                             <bitmap>media/images/box/movement/move.png</bitmap>
                             <script language="4">
@@ -440,13 +385,68 @@ class MyClass(GeneratedClass):
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         </Box>
+                        <Box name="Python Script" id="3" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="445" y="128">
+                            <bitmap>media/images/box/box-python-script.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[from RandomSentences import RandomSentences
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+        self.memory = ALProxy("ALMemory")
+        self.tts = ALProxy("ALTextToSpeech")
+
+    def onLoad(self):
+        #put initialization code here
+        my_behavior_path = self.behaviorAbsolutePath()
+        libs_folder_path = os.path.join(my_behavior_path, "lib")
+        if libs_folder_path not in sys.path:
+            sys.path.insert(0, libs_folder_path)
+        pass
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        #self.onStopped() #activate the output of the box
+        step = self.memory.getData("step1")
+        stop = self.memory.getData("stop")
+        if(stop == 0):
+            x = RandomSentences()
+            if(step > 9):
+                self.tts.say(x.getRandomShakeHandsGiveUp())
+                self.done_output()
+            else:
+                step += 1
+                if(step == 3):
+                    self.tts.say(x.getRandomShakeHandsSentence1())
+                if(step == 6):
+                    self.tts.say(x.getRandomShakeHandsSentence2())
+                self.memory.insertData("step1",step)
+                self.continue_output()
+        else:
+            self.done_output()
+        pass
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        self.onStopped() #activate the output of the box]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Output name="continue_output" type="1" type_size="1" nature="2" inner="0" tooltip="" id="4" />
+                            <Output name="done_output" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
+                        </Box>
                         <Link inputowner="6" indexofinput="2" outputowner="1" indexofoutput="4" />
-                        <Link inputowner="3" indexofinput="2" outputowner="6" indexofoutput="4" />
-                        <Link inputowner="6" indexofinput="2" outputowner="3" indexofoutput="4" />
-                        <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="4" indexofinput="2" outputowner="7" indexofoutput="4" />
                         <Link inputowner="0" indexofinput="5" outputowner="4" indexofoutput="4" />
+                        <Link inputowner="3" indexofinput="2" outputowner="6" indexofoutput="4" />
+                        <Link inputowner="6" indexofinput="2" outputowner="3" indexofoutput="4" />
                         <Link inputowner="7" indexofinput="2" outputowner="0" indexofoutput="4" />
+                        <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>

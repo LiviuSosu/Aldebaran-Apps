@@ -206,6 +206,7 @@
     <Compile Include="Controllers\DanceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PhoneStoreController.cs" />
+    <Compile Include="Controllers\ShapeRecognitionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -315,8 +316,11 @@
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Dance\Index.cshtml" />
     <Content Include="Views\PhoneStore\PhoneAuthentication.cshtml" />
+    <Content Include="Views\PhoneStore\CurrentOffer.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\ShapeRecognition\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

@@ -1,4 +1,7 @@
-﻿using RobotQuiz.Helpers;
+﻿using Newtonsoft.Json;
+using RobotAPIs.Helpers;
+using RobotAPIs.Models;
+using RobotQuiz.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,14 +14,17 @@ namespace RobotAPIs.Controllers
     public class PhoneStoreController : Controller
     {
         // GET: PhoneStore
-        public ActionResult Index()
-        {
-            return View();
-        }
+        //public ActionResult Index()
+        //{
+        //    DataHelper.Data = DataHelper.GetDataFronLocalJsonFile();
+        //    return View();
+        //}
+        string sData = DataHelper.GetDataFronLocalJsonFile();
 
         [HttpGet]
         public ActionResult PhoneAuthentication()
         {
+          
             return View();
         }
 
@@ -27,12 +33,21 @@ namespace RobotAPIs.Controllers
         {
             if(IsPhoneNumberValid(phoneNumber))
             {
-                CommandHelper.SetCurrentCommand("PhoneAuthentificated_Pepper");
-                return RedirectToAction("next page");
+                Data data = JsonConvert.DeserializeObject<Data>(sData);
+                var customer = data.Customers.Where(x=>x.PhoneNumber== phoneNumber).SingleOrDefault();
+                if (customer!=null)
+                {
+                    DataHelper.Customer = customer;
+                    return RedirectToAction("CurrentOffer");
+                }
+                else
+                {
+                    return Redirect(Request.UrlReferrer.PathAndQuery);
+                }
             }
             else
             {
-                CommandHelper.SetCurrentCommand("PhoneNotAuthentificated_Pepper");
+                CommandHelper.SetCurrentCommand("InvalidPhoneNumbuer_Pepper");
                 return RedirectToAction("PhoneAuthentication");
             }
         }
@@ -52,9 +67,10 @@ namespace RobotAPIs.Controllers
             return result;
         }
 
-        public ActionResult CurrentOffer()
+        public ActionResult CurrentOffer(int? customerId)
         {
-            return View();
+            var offer = DataHelper.Customer.Offer;
+            return View(offer);
         }
 
         public ActionResult Phones()
