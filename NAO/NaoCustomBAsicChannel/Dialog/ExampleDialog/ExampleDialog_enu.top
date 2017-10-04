@@ -32,7 +32,7 @@ concept:(birthDay) ["When is your birthday?"]
 u:(~likeWorkingAtAccenture) \rspd=90\ Yes, I love it! This is the coolest place to work for software engineers
 
 #responses of the questinons from basic channel
-u:(~robotName) My name is Pepper! I am a robot!
+u:(~robotName) My name is Nao! I am a robot!
 u:(~whyNao) Because that is how I was named by my Manufacturer Aldebaran
 u:(~howOld) I am almost two years old.
 u:(~haveFriends) I do. But I haven't ment them yet. And I have a lot of brothers like Pepper and Romeo.
